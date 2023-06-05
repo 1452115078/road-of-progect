@@ -1,3 +1,5 @@
 ﻿  contact.c
-E:\million\road-of-progect\Contact\Contact\contact.c(203,3): warning C4102: “case1”: 未引用的标签
+E:\million\road-of-progect\Contact\Contact\contact.c(242,3): warning C4102: “case1”: 未引用的标签
+  test.c
+  正在生成代码...
   Contact.vcxproj -> E:\million\road-of-progect\Contact\x64\Debug\Contact.exe

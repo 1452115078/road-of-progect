@@ -42,3 +42,4 @@ void modify_contact(struct Contact* pc);
 void sort_contact(struct Contact* pc);
 void destory_contact(struct Contact* pc);
 
+void savecontact(struct Contact* pc);

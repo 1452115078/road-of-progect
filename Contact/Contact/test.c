@@ -48,6 +48,8 @@ int main()
 			sort_contact(&con);
 			break;
 		case EXIT:
+			savecontact(&con);
+			printf("保存文件成功\n");
 			destory_contact(&con);
 			printf("exit programe\n");
 			break;

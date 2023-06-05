@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "contact.h"
+int check_capacity(struct Contact* pc);
 //静态版本
 //void init_contact(struct Contact* pc)
 //{
@@ -8,6 +9,26 @@
 //	pc->sz = 0;
 //}
 //动态版本
+//文件版本读取数据
+void loadcontact(struct Contact* pc)
+{
+	FILE* pr = fopen("data.txt", "rb");
+	if (pr == NULL)
+	{
+		perror("fopen faile\n");
+		return;
+	}
+	struct Peopinfo s = { 0 };
+	while (fread(&s, sizeof(struct Peopinfo), 1, pr))
+	{
+		check_capacity(pc);
+		pc->data[pc->sz] = s;
+		pc->sz++;
+	}
+	fclose(pr);
+	pr = NULL;
+}
+
 void init_contact(struct Contact* pc)
 {
 	assert(pc);
@@ -18,6 +39,24 @@ void init_contact(struct Contact* pc)
 	}
 	pc->sz = 0;
 	pc->capacity = INT_CAPACITY;
+	loadcontact(pc);
+}
+//文件版本写入
+void savecontact(struct Contact* pc)
+{
+	FILE* pw = fopen("data.txt", "wb");
+	if (pc == NULL)
+	{
+		perror("fopen faile\n");
+		return;
+	}
+	int i = 0;
+	for (i = 0; i < pc->sz; i++)
+	{
+		fwrite(pc->data + i, sizeof(struct Peopinfo), 1, pw);
+	}
+	fclose(pw);
+	pw = NULL;
 }
 void destory_contact(struct Contact* pc)
 {
@@ -58,7 +97,7 @@ int check_capacity(struct Contact* pc)
 		{
 			pc->data = ptr;
 			pc->capacity += INT_SZ;
-			printf("增容成功\n");
+			//printf("增容成功\n");
 			return 1;
 		}
 		else
