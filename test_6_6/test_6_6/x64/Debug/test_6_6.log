@@ -1,5 +1,0 @@
-﻿  test.c
-E:\million\C_language\test_6_6\test_6_6\test.c(15,40): warning C4311: “类型强制转换”: 从“int *”到“int”的指针截断
-E:\million\C_language\test_6_6\test_6_6\test.c(16,40): warning C4311: “类型强制转换”: 从“char (*)[4]”到“int”的指针截断
-E:\million\C_language\test_6_6\test_6_6\test.c(17,40): warning C4311: “类型强制转换”: 从“char *”到“int”的指针截断
-  test_6_6.vcxproj -> E:\million\C_language\test_6_6\x64\Debug\test_6_6.exe
