@@ -18,3 +18,11 @@ void SLPrint(SL* pc);//打印
 void SLPushback(SL* pc, SLDatatype x);//尾插
 void SLPopback(SL* pc);//尾删
 
+void SLPushfront(SL* pc, SLDatatype x);//头插
+void SLPopfront(SL* pc);//头删
+
+void SLInsert(SL* pc, int pos, SLDatatype x);//任意位置插入
+void SLErase(SL* pc, int pos);//任意位置插入
+
+
+
