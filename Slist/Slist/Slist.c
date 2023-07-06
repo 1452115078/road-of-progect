@@ -35,10 +35,10 @@ void SListPrint(SListNode* plist)
 // µ¥Á´±íÎ²²å
 void SListPushBack(SListNode** pplist, SLTDateType x)
 {
-	slistnode* newnode = buyslistnode(x);
-	slistnode* tail = *pplist;
+	SListNode* newnode = buyslistnode(x);
+	SListNode* tail = *pplist;
 
-	if (*pplist == null)
+	if (*pplist == NULL)
 	{
 		*pplist = newnode;
 	}
