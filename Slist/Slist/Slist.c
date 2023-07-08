@@ -13,10 +13,11 @@ SListNode* BuySListNode(SLTDateType x)
 	newnode->next = NULL;
 	return newnode;
 }
-void SListDestroy(SListNode* plist)
+void SListDestroy(SListNode** plist)
 {
 	//assert(plist);
-	free(plist);
+	free(*plist);
+	*plist = NULL;
 	//plist->next = NULL;
 	//plist->data = 0;
 }
@@ -35,7 +36,7 @@ void SListPrint(SListNode* plist)
 // µ¥Á´±íÎ²²å
 void SListPushBack(SListNode** pplist, SLTDateType x)
 {
-	SListNode* newnode = buyslistnode(x);
+	SListNode* newnode = BuySListNode(x);
 	SListNode* tail = *pplist;
 
 	if (*pplist == NULL)

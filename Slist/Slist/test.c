@@ -31,7 +31,7 @@ void TestSlist1()
 	////SListPopBack(&st);
 	//SListPrint(st);
 
-	SListDestroy(st);
+	SListDestroy(&st);
 }
 void TestSlist2()
 {
