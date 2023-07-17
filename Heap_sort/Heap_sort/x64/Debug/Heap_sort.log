@@ -1,0 +1,3 @@
+﻿  test.c
+E:\million\road-of-progect\Heap_sort\Heap_sort\test.c(63,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  Heap_sort.vcxproj -> E:\million\road-of-progect\Heap_sort\x64\Debug\Heap_sort.exe
