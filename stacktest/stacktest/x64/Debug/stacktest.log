@@ -1,2 +1,11 @@
-﻿  Queue.c
-  stacktest.vcxproj -> E:\million\road-of-progect\stacktest\x64\Debug\stacktest.exe
+﻿  stacktest1.c
+E:\million\road-of-progect\stacktest\stacktest\Queue.h(9,1): error C2011: “QueueNode”:“struct”类型重定义
+E:\million\road-of-progect\stacktest\stacktest\stacktest1.h(8,16): message : 参见“QueueNode”的声明
+E:\million\road-of-progect\stacktest\stacktest\Queue.h(15,1): error C2011: “Queue”:“struct”类型重定义
+E:\million\road-of-progect\stacktest\stacktest\stacktest1.h(14,16): message : 参见“Queue”的声明
+  test.c
+E:\million\road-of-progect\stacktest\stacktest\stacktest1.h(9,1): error C2011: “QueueNode”:“struct”类型重定义
+E:\million\road-of-progect\stacktest\stacktest\Queue.h(8,16): message : 参见“QueueNode”的声明
+E:\million\road-of-progect\stacktest\stacktest\stacktest1.h(15,1): error C2011: “Queue”:“struct”类型重定义
+E:\million\road-of-progect\stacktest\stacktest\Queue.h(14,16): message : 参见“Queue”的声明
+  正在生成代码...

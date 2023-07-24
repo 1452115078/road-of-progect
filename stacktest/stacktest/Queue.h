@@ -1,6 +1,22 @@
 #pragma once
-#include "stacktest1.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>
+//链表实现队列
+typedef int QDataType;
+typedef struct QueueNode
+{
+	QDataType data;
+	struct QueueNode* next;
+}QNode;
 
+typedef struct Queue
+{
+	QNode* head;
+	QNode* tail;
+	int size;
+}Queue;
 // 初始化队列
 void QueueInit(Queue* q);
 // 队尾入队列

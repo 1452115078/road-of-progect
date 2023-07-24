@@ -1,0 +1,3 @@
+﻿  test.c
+E:\million\road-of-progect\BinaryTreeNode\BinaryTreeNode\test.c(42,34): warning C4133: “函数”: 从“char [17]”到“BTDataType *”的类型不兼容
+  BinaryTreeNode.vcxproj -> E:\million\road-of-progect\BinaryTreeNode\x64\Debug\BinaryTreeNode.exe
