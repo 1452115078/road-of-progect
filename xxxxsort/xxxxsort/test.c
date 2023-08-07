@@ -5,7 +5,7 @@
 void TestOP()
 {
 	srand(time(0));
-	const int N = 10000000;
+	const int N = 1000000;
 	int* a1 = (int*)malloc(sizeof(int) * N);
 	if (a1 == NULL)
 	{
@@ -51,6 +51,7 @@ void TestOP()
 	for (int i = 0; i < N; ++i)
 	{
 		a1[i] = rand() + i;
+		//a1[i] = i;
 		a2[i] = a1[i];
 		a3[i] = a1[i];
 		a4[i] = a1[i];
@@ -158,7 +159,7 @@ int main()
 	//TestSelectSort();
 	//TestHeapSort();
 	//TestBubblesort();
-	TestQuickSort();
+	//TestQuickSort();
 	//TestMergeSort();
-	//TestOP();
+	TestOP();
 }

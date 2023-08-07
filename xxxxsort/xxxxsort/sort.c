@@ -439,10 +439,7 @@ void MergeSortNonr1(int* a, int n)
 			//调整一部分拷贝一部分
 			memcpy(a + i, tmp + i, sizeof(int) * (end2 - i + 1));
 		}
-		//调整完毕全部一起拷贝
-
 		rangeN *= 2;
-
 	}
 	free(tmp);
 	tmp = NULL;
@@ -501,7 +498,6 @@ void MergeSortNonr2(int* a, int n)
 			{
 				tmp[j++] = a[begin2++];
 			}
-			
 		}
 		//调整完毕全部一起拷贝
 		memcpy(a, tmp, sizeof(int) * (n));

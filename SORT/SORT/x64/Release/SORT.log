@@ -1,0 +1,8 @@
+﻿  sort.c
+  正在生成代码
+E:\million\road-of-progect\SORT\SORT\sort.c(188): warning C4717: “QuickSort”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+  2 of 10 functions (20.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  SORT.vcxproj -> E:\million\road-of-progect\SORT\x64\Release\SORT.exe
