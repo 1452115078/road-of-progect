@@ -22,3 +22,4 @@ void QuickSortNonr(int* a, int left, int right);
 void MergeSort(int* a, int n);
 void MergeSortNonr1(int* a, int n);
 void MergeSortNonr2(int* a, int n);
+void CountSort(int* a, int n);

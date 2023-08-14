@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32216.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/million/road-of-progect/date/date/date.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "574cec186f8b3652200278c4abaf29d1ba52a2668f147f35581313a4ff48c9f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/million/road-of-progect/date/date/date.h"
+          },
+          "hashes": {
+            "sha-256": "e6ec57ce805ed2fff1123b0b3ffc58e7c642e565aec2a2b660631aa7e81001bc"
+          }
+        }
+      ]
+    }
+  ]
+}

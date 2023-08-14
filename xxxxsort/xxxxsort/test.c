@@ -152,6 +152,13 @@ void TestMergeSort()
 	MergeSortNonr2(a, sizeof(a) / sizeof(a[0]));
 	Printsort(a, sizeof(a) / sizeof(a[0]));
 }
+void TestCountSort()
+{
+	int a[] = { 9,6,7,-1,-3,9,4,4,-1,1,-3 };
+	Printsort(a, sizeof(a) / sizeof(a[0]));
+	CountSort(a, sizeof(a) / sizeof(a[0]));
+	Printsort(a, sizeof(a) / sizeof(a[0]));
+}
 int main()
 {
 	//TestInsertSort();
@@ -160,6 +167,7 @@ int main()
 	//TestHeapSort();
 	//TestBubblesort();
 	//TestQuickSort();
+	TestCountSort();
 	//TestMergeSort();
-	TestOP();
+	//TestOP();
 }

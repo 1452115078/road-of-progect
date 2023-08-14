@@ -1,3 +1,5 @@
-﻿  test.c
+﻿  sort.c
+  test.c
 E:\million\road-of-progect\xxxxsort\xxxxsort\test.c(7,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
   xxxxsort.vcxproj -> E:\million\road-of-progect\xxxxsort\x64\Debug\xxxxsort.exe
