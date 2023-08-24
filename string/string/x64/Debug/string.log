@@ -1,0 +1,8 @@
+﻿  demo.cpp
+E:\million\road-of-progect\string\string\string.h(45,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\million\road-of-progect\string\string\string.h(151,1): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\million\road-of-progect\string\string\string.h(172,13): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\million\road-of-progect\string\string\string.h(241,13): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+E:\million\road-of-progect\string\string\string.h(251,1): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+E:\million\road-of-progect\string\string\string.h(262,14): warning C4267: “-=”: 从“size_t”转换到“int”，可能丢失数据
+  string.vcxproj -> E:\million\road-of-progect\string\x64\Debug\string.exe
